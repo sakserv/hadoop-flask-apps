@@ -29,6 +29,7 @@ def storm():
 @app.route('/hivemr')
 def hivemr():
     def inner():
+        yield 'Starting query, please wait...<br/>\n'
         cmd = "hive -f /tmp/git/hive-json/tweets_query.hsql".split()
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         for line in iter(process.stdout.readline, ''):
@@ -41,6 +42,7 @@ def hivemr():
 @app.route('/hivetez')
 def hivetez():
     def inner():
+        yield 'Starting query, please wait...<br/>\n'
         cmd = "hive -f /tmp/git/hive-json/tweets_query.hsql -hiveconf hive.execution.engine=tez".split()
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         for line in iter(process.stdout.readline, ''):
