@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Twitter Apps</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script type='text/javascript'>
+        window.setInterval(function() {
+            var elem = document.getElementById('result');
+            elem.scrollTop = elem.scrollHeight;
+        }, 500);
+    </script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Twitter Apps</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Exploring Twitter Data with Storm and Hive</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container clearfix" style="margin-top: 60px;"> 
+
+<div class="row">
+<div class="col-xs-4">
+  <div class="text-center offer-box">
+    <h1>Storm</h1>
+        <p>Apache™ Storm is a distributed real-time computation system for processing fast, large streams of data. Storm adds reliable real-time data processing capabilities to Apache Hadoop® 2.x. Storm in Hadoop helps capture new business opportunities with low-latency dashboards, security alerts, and operational enhancements integrated with other applications running in their Hadoop cluster.<br>Watch data stream in:<br><a href="/storm" style="margin: 15px;" class="btn btn-large btn-success">Storm Watch</a></p>
+</div>
+</div>
+<div class="col-xs-4">
+ <div class="text-center offer-box">
+    <h1>Hive Tez</h1>
+        <p>Apache™ Tez generalizes the MapReduce paradigm to a more powerful framework for executing a complex DAG (directed acyclic graph) of tasks. MapReduce has been the data processing backbone for Hadoop®, but its batch-oriented nature makes it unsuited for interactive query. Tez will allow projects in the Apache Hadoop® ecosystem such as Apache Hive and Apache Pig to meet demands for fast response times and extreme throughput at petabyte scale. The Apache Tez project is part of the Stinger Initiative.<br>Query twitter data with hive on tez:<br><a href="/hivetez" style="margin: 15px;" class="btn btn-large btn-success">Twitter Hive Tez</a></p>
+   </div>
+  </div>  
+  <div class="col-xs-4">
+   <div class="text-center offer-box">
+    <h1>Hive MR</h1>
+        <p>Apache Hive is the defacto standard for SQL queries over petabytes of data in Hadoop. It is a comprehensive and compliant engine that offers the broadest range of SQL semantics for Hadoop, providing a powerful set of tools for analysts and developers to access Hadoop data.<br>Query twitter data with hive on MR<br><a href="/hivemr" style="margin: 15px;" class="btn btn-large btn-success">Twitter Hive MR</a></p>
+  </div>
+ </div>
+</div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
