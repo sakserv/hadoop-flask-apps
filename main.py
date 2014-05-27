@@ -14,12 +14,12 @@ def index(name=None):
 
 @app.route('/storm')
 def storm():
-    url = "http://ec2-54-187-242-237.us-west-2.compute.amazonaws.com:8000/log?file=worker-6701.log"
+    url = "http://ec2-54-200-149-130.us-west-2.compute.amazonaws.com:8000/log?file=worker-6700.log"
     def inner():
         while True:
             contents = urllib2.urlopen(url).readlines()[-5:]
             for line in contents:
-                if 'Emitting' in line and 'count' in line:
+                if 'Processing received' in line:
                     yield '%s<br/>\n' % line
             time.sleep(1)
     env = Environment(loader=FileSystemLoader('templates'))
