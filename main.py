@@ -14,7 +14,7 @@ def index(name=None):
 
 @app.route('/storm')
 def storm():
-    url = "http://ec2-54-200-149-130.us-west-2.compute.amazonaws.com:8000/log?file=worker-6700.log"
+    url = "http://ec2-54-200-230-1.us-west-2.compute.amazonaws.com:8000/log?file=worker-6700.log"
     def inner():
         while True:
             contents = urllib2.urlopen(url).readlines()[-5:]
